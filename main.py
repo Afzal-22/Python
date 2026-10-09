@@ -274,7 +274,6 @@ reebok.show()
 campus.show()
 
 
-"""
 
 class Animal:
     name="lion" #class attribute
@@ -294,4 +293,37 @@ obj=Animal(12)
 obj.show()
 obj.hello()
 obj.static()
+
+
+class Factory:#parent 
+    a="I am an attribute inside factory"
+    def hello(self):
+        print("hello i am a method inside factory")
+
+
+class Factorydhaka(Factory): #child class
+    pass
+ 
+
+
+obj=Factory()
+print(obj.a)
+
+obj2=Factorydhaka()
+print(obj2.hello())
+"""
+
+class Animal:
+    def __init__(self,name):
+        self.name=name
+    def show(self):
+        print(f"Name is {self.name}")
+
+class Human(Animal):
+    pass
+
+
+person1=Human("mahi")
+person1.show()
+
 
