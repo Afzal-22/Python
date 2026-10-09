@@ -245,8 +245,53 @@ print("The club will start soon.  ")
 p=open(r'C:/Users/Afzal Kabir/Desktop/dfd.txt')
 
 print(p.read())
- """
 p=open('superman.txt','a')
 p.write("addd apende.\n")
 p.close()
+
+     
+class Factory():
+    def __init__(self,material,zips,pockets):
+        self.material=material
+        self.zips=zips
+        self.pockets=pockets
+    def show(self):
+        print(f"Material:{self.material},Zips:{self.zips},Pockets:{self.pockets}")
+       
+
+
+              
+
+
+
+
+
+reebok= Factory("leather", 5, 2)
+
+campus= Factory("canvas", 3, 4)
+
+reebok.show()
+campus.show()
+
+
+"""
+
+class Animal:
+    name="lion" #class attribute
+
+    def __init__(self,age):
+        self.age=age #instance attribute
+    def show(self):    #instance method
+        print(f"Age is {self.age}")
+    @classmethod
+    def hello(cls):
+        print("how are you")
+    @staticmethod
+    def static():
+        print ("how are you")
+
+obj=Animal(12)
+obj.show()
+obj.hello()
+obj.static()
 
