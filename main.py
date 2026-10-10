@@ -350,8 +350,44 @@ class Robots(Human,Animal):
 
 
 obj=Robots("mah",23)
-"""
+
 
 class Facotry:
-    def
+    def __init__(self,material,zips):
+        self.material=material
+        self.zips=zips
+
+class DhakaFactory(Facotry):
+    def __init__(self,material,zips,color):
+        super().__init__(material,zips)
+        self.color=color
+
+class CtgFacotry(DhakaFactory):
+    def __init__(self, material, zips, color,pockets):
+        super().__init__(material, zips, color)
+        self.pockets=pockets
  
+
+
+
+class Animal:
+    def show(self):
+        print("i am mahi")
+
+class Human(Animal):
+    def show(self):
+        print("he how r u")
+
+obj=Human()
+obj.show()
+
+
+"""
+class Factory:
+  __a="pune"
+  def show(self):
+        print(Factory.__a)
+
+obj=Factory()
+obj.show()
+
