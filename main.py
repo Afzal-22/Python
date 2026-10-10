@@ -311,19 +311,47 @@ print(obj.a)
 
 obj2=Factorydhaka()
 print(obj2.hello())
-"""
+
 
 class Animal:
     def __init__(self,name):
         self.name=name
     def show(self):
         print(f"Name is {self.name}")
+    
 
 class Human(Animal):
-    pass
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+
+    def show(self):
+        print(f"Name is {self.name},{self.age}")
+        
+Animal1=Animal("lion")
+Animal1.show()
 
 
-person1=Human("mahi")
+person1=Human("mahi",23)
 person1.show()
 
 
+
+class Animal:
+    def __init__(self,name):
+        pass
+
+class Human:
+    def __init__(self,name,age):
+        pass
+class Robots(Human,Animal):
+
+    name3="charli123"
+
+
+obj=Robots("mah",23)
+"""
+
+class Facotry:
+    def
+ 
