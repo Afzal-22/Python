@@ -382,7 +382,7 @@ obj=Human()
 obj.show()
 
 
-"""
+
 class Factory:
   __a="pune"
   def show(self):
@@ -391,3 +391,36 @@ class Factory:
 obj=Factory()
 obj.show()
 
+"""
+
+from abc import ABC,abstractmethod
+class abstract(ABC):
+     @abstractmethod
+     def perimeter(self):
+          pass
+     @abstractmethod
+     def area(self):
+          pass
+
+
+class Square(abstract):
+    def __init__(self,side):
+          self.side=side
+    def perimeter(self):
+          print("creater")
+    def area(self):
+         print("creater are") 
+    
+
+class Circle(abstract):
+     def __init__(self,radius):
+          self.radius=radius
+     def perimeter(self):
+          print("creater")
+     def area(self):
+         print("creater are") 
+    
+
+
+obj=Circle(4)
+obj1=Square(5)
