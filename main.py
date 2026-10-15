@@ -393,34 +393,76 @@ obj.show()
 
 """
 
-from abc import ABC,abstractmethod
-class abstract(ABC):
-     @abstractmethod
-     def perimeter(self):
-          pass
-     @abstractmethod
-     def area(self):
-          pass
+# from abc import ABC,abstractmethod
+# class abstract(ABC):
+#      @abstractmethod
+#      def perimeter(self):
+#           pass
+#      @abstractmethod
+#      def area(self):
+#           pass
 
 
-class Square(abstract):
-    def __init__(self,side):
-          self.side=side
-    def perimeter(self):
-          print("creater")
-    def area(self):
-         print("creater are") 
+# class Square(abstract):
+#     def __init__(self,side):
+#           self.side=side
+#     def perimeter(self):
+#           print("creater")
+#     def area(self):
+#          print("creater are") 
     
 
-class Circle(abstract):
-     def __init__(self,radius):
-          self.radius=radius
-     def perimeter(self):
-          print("creater")
-     def area(self):
-         print("creater are") 
+# class Circle(abstract):
+#      def __init__(self,radius):
+#           self.radius=radius
+#      def perimeter(self):
+#           print("creater")
+#      def area(self):
+#          print("creater are") 
     
 
 
-obj=Circle(4)
-obj1=Square(5)
+# obj=Circle(4)
+# obj1=Square(5)
+
+
+# def decorate(func):
+#     def wrapper():
+#         print("print before the function hrllo")
+#         func()
+#         print("i will after the function")
+#     return wrapper
+
+# @decorate
+# def hello():
+#     print("hello i am mahi")
+
+# hello()
+
+# def addition(*args):
+#     sum=0
+#     for i in args:
+#         sum=sum+i
+
+#     print(sum)
+
+# addition(12,3,3,3,3,)
+
+# def info(**kwargs):
+#         print("Your info is \n\n")
+#         for i in kwargs:
+#             print(f"{i}:{kwargs[i]}")
+
+# info(name="akash",age=23,desig="ai")
+
+
+# a=[1,2,3,3]
+# result= map(lambda x:x*2,a)
+# print(list(result))
+
+# b=[2,3,4,5]
+# result1=filter(lambda x:True if x%2==0 else False,b)
+# print(list(result1))
+
+import maths
+print(maths.addition(12,3))
